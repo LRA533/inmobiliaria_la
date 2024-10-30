@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/la_estilos.css">
+    <script src="js/la_funciones.js" defer></script>
+    <title>Agencia Inmobiliaria</title>
+</head>
+<body>
+    <header class="la_header">
+        <h1>Bienvenido a Inmobiliaria LA</h1>
+        <img src="la_imagenes/la_logo.jpg" alt="Logo de la Agencia">
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <div id="rotador-propiedades">
+                <!-- Aquí se mostrarán las propiedades -->
+            </div>
+        </section>
+
+        <section id="propiedades">
+            <h2>Propiedades Destacadas</h2>
+            <ul>
+                <li>Propiedad 1: Casa en la playa</li>
+                <li>Propiedad 2: Apartamento en el centro</li>
+                <li>Propiedad 3: Chalet en las montañas</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="php/la_conexion.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Inmobiliaria LA. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
